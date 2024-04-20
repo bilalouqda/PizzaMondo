@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(77, 77, 77);
+   
+    
+}
+
+h2 , h1{
+    text-align: center;
+    background-color: rgb(77, 77, 77) ;
+    color: white;
+}
+
+header {
+    background-image:url("images/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+#menu {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    #menu {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+        align-items: center; /* Center items vertically */
+    }
+
+    #menu a {
+        margin-bottom: 10px; /* Add some space between menu items */
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ccc; 
+}
+
+section {
+    padding: 20px;
+}
+
+.pizza {
+    /* border: 1px solid #ccc;
+    padding: 10px;
+    width: 100; */
+    /* margin-bottom: 10px; */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.order{
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+#order-summary {
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#order-summary p {
+    margin: 5px 0; /* Adjust margin between paragraphs */
+}
+
+/* Style for the order section */
+#order {
+    /* background-color:  rgb(77, 77, 77); */
+    background-image:url("images/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the form elements */
+#order-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#order-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333; /* Set label color */
+}
+
+#order-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background-image:url("images/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#order-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#order-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the order summary */
+#order-summary {
+    margin-top: 20px;
+    text-align: center;
+}
+

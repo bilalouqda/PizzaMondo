@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaMondo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>PizzaMondo</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Menu</h2>
+    <section id="menu">
+        <div class="pizza">
+            <img width="190px" src="images/crispy-salami-pizza-with-cheese-tomatoes-sausage-pepper.jpg"
+                alt="Pepperoni Pizza">
+            <h3 style="color: white">Pizza with cheese tomatoes</h3>
+            <p style="color: white">20dh</p>
+            <button onclick="addToCart('Pizza with cheese tomatoes', 20)">Add to Cart</button>
+        </div>
+        <div class="pizza">
+            <img width="185px" src="images/crispy-mixed-pizza-with-olives-sausage.jpg" alt="Pepperoni Pizza">
+            <h3 style="color: white">Pizza with olives sausage</h3>
+            <p style="color: white">30dh</p>
+            <button onclick="addToCart('Pizza with olives sausage', 30)">Add to Cart</button>
+        </div>
+        <div class="pizza">
+            <img width="190px" src="images/crispy-salami-pizza-with-cheese-tomatoes-sausage-pepper.jpg"
+                alt="Pepperoni Pizza">
+            <h3 style="color: white">Pizza with cheese tomatoes</h3>
+            <p style="color: white">20dh</p>
+            <button onclick="addToCart('Pizza with cheese tomatoes', 20)">Add to Cart</button>
+        </div>
+        <div class="pizza">
+            <img width="185px" src="images/crispy-mixed-pizza-with-olives-sausage.jpg" alt="Pepperoni Pizza">
+            <h3 style="color: white">Pizza with olives sausage</h3>
+            <p style="color: white">30dh</p>
+            <button onclick="addToCart('Pizza with olives sausage', 30)">Add to Cart</button>
+        </div>
+        <div class="pizza">
+            <img width="190px" src="images/crispy-salami-pizza-with-cheese-tomatoes-sausage-pepper.jpg"
+                alt="Pepperoni Pizza">
+            <h3 style="color: white">Pizza with cheese tomatoes</h3>
+            <p style="color: white">20dh</p>
+            <button onclick="addToCart('Pizza with cheese tomatoes', 20)">Add to Cart</button>
+        </div>
+    </section>
+    <section id="order">
+        <h2>Order</h2>
+        <form id="order-form" onsubmit="processOrder(event)">
+            <label for="name" style="color: white">Name:</label>
+            <input type="text" id="name" required>
+            <label for="address" style="color: white">Address:</label>
+            <input type="text" id="address" required>
+            <button type="submit">Place Order</button>
+        </form>
+        <div id="order-summary"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
